@@ -30,16 +30,23 @@ export default function GeneralDentistryPage() {
         items={[{ name: "Services", url: "https://delhidentalcare.com/services" }, { name: "General Dentistry" }]}
       />
       <div className="min-h-screen">
-        <section className="relative w-full aspect-[3/1] sm:aspect-[16/5] bg-gradient-to-r from-[#233870] to-[#0085c4]">
-          {/* Replace the src below with your banner image that already has text */}
-          <Image
-            src="https://res.cloudinary.com/dajphu5rf/image/upload/v1761904331/banner_1_w0z5rf.png"
-            alt="General Dentistry - Delhi Dental Care"
-            fill
-            className="absolute inset-0 w-full h-full object-contain"
-            priority
-          />
-        </section>
+        <section className="relative aspect-[18/9] sm:aspect-[21/9] lg:aspect-[16/7] overflow-hidden z-0">
+            <picture>
+              {/* Mobile image first */}
+              <source
+                media="(max-width: 768px)"
+                srcSet="https://res.cloudinary.com/dajphu5rf/image/upload/v1761913528/genral_mcjlek.png"
+              />
+              {/* Desktop fallback */}
+              <Image
+                src="https://res.cloudinary.com/dajphu5rf/image/upload/v1761904331/banner_1_w0z5rf.png"
+                alt="General Dentistry - Delhi Dental Care"
+                fill
+                className="object-cover object-center sm:object-top"
+                priority
+              />
+            </picture>
+          </section>
           <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Button asChild variant="ghost" className="mb-8 text-[#233870] hover:text-[#0085c4]">
