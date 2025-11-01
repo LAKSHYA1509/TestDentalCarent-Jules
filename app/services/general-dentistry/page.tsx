@@ -32,17 +32,11 @@ export default function GeneralDentistryPage() {
       <div className="min-h-screen">
         <section className="relative aspect-[18/9] sm:aspect-[21/9] lg:aspect-[16/7] overflow-hidden z-0">
             <picture>
-              {/* Mobile image first */}
-              <source
-                media="(max-width: 768px)"
-                srcSet="https://res.cloudinary.com/dajphu5rf/image/upload/v1761913528/genral_mcjlek.png"
-              />
-              {/* Desktop fallback */}
               <Image
-                src="https://res.cloudinary.com/dajphu5rf/image/upload/v1761904331/banner_1_w0z5rf.png"
+                src="https://res.cloudinary.com/dajphu5rf/image/upload/v1761915919/genral_upuq7b.png"
                 alt="General Dentistry - Delhi Dental Care"
                 fill
-                className="object-cover object-center sm:object-top"
+                className="object-contain object-center sm:object-top"
                 priority
               />
             </picture>
