@@ -1,6 +1,6 @@
 # Delhi Dental Care Center Website
 
-A comprehensive, production-ready dental clinic website built with Next.js, TypeScript, and Supabase.
+A comprehensive, production-ready dental clinic website built with Next.js, TypeScript, and Supabase. With High End Frontend and Database Integration for a cleaner outlook.
 
 ## Features
 
