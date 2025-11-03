@@ -30,10 +30,10 @@ export default function GeneralDentistryPage() {
         items={[{ name: "Services", url: "https://delhidentalcare.com/services" }, { name: "General Dentistry" }]}
       />
       <div className="min-h-screen">
-        <section className="relative aspect-[18/9] sm:aspect-[21/9] lg:aspect-[16/7] overflow-hidden z-0">
+        <section className="relative aspect-[23/10] overflow-hidden">
             <picture>
               <Image
-                src="https://res.cloudinary.com/dajphu5rf/image/upload/v1761915919/genral_upuq7b.png"
+                src="https://res.cloudinary.com/dajphu5rf/image/upload/v1762166994/1_zno0ia.png"
                 alt="General Dentistry - Delhi Dental Care"
                 fill
                 className="object-contain object-center sm:object-top"
@@ -41,7 +41,7 @@ export default function GeneralDentistryPage() {
               />
             </picture>
           </section>
-          <section className="py-16">
+          <section className="py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Button asChild variant="ghost" className="mb-8 text-[#233870] hover:text-[#0085c4]">
             <Link href="/services">

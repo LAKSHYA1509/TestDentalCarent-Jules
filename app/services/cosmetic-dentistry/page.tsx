@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, ArrowLeft } from "lucide-react"
+import Image from "next/image"
 
 export const metadata: Metadata = {
   title: "Cosmetic Dentistry Services - Delhi Dental Care Center",
@@ -13,15 +14,18 @@ export const metadata: Metadata = {
 export default function CosmeticDentistryPage() {
   return (
     <div>
-    <section className="relative w-full aspect-[3/1] sm:aspect-[16/5] bg-gradient-to-r from-[#233870] to-[#0085c4]">
-        <img
-          src="https://res.cloudinary.com/dajphu5rf/image/upload/v1761904922/BANNER_1._mirlnh.png"
-          alt="Cosmetic Dentistry Banner"
-          className="absolute inset-0 w-full h-full object-contain"
-        />
-      </section>
-
-      <section className="py-16">
+   <section className="relative aspect-[23/10] overflow-hidden">
+            <picture>
+              <Image
+                src="https://res.cloudinary.com/dajphu5rf/image/upload/v1762166923/2_jpdw09.png"
+                alt="General Dentistry - Delhi Dental Care"
+                fill
+                className="object-contain object-center sm:object-top"
+                priority
+              />
+            </picture>
+          </section>
+          <section className="py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Button asChild variant="ghost" className="mb-8 text-[#233870] hover:text-[#0085c4]">
             <Link href="/services">

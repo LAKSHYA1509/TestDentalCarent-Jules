@@ -114,6 +114,9 @@ export function Footer() {
               <li>Root Canal Treatment</li>
               <li>Dental Implants</li>
               <li>Teeth Whitening</li>
+              <li>Dentures && Bridges</li>
+              <li>Pediatric Dentistry</li>
+              <li>Emergency Dental Care</li>
             </ul>
           </div>
 

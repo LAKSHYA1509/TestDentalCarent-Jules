@@ -1,7 +1,9 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft } from 'lucide-react';
+import { CheckCircle, ArrowLeft } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card'
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Emergency Care - Delhi Dental Care Center',
@@ -11,61 +13,249 @@ export const metadata: Metadata = {
 export default function ServicePage() {
   return (
     <div>
-      <section className="bg-gradient-to-br from-blue-50 to-white py-16">
+            <div className="min-h-screen">
+                    <section className="relative aspect-[23/10] overflow-hidden">
+                        <picture>
+                          <Image
+                            src="https://res.cloudinary.com/dajphu5rf/image/upload/v1762166977/7_ujfxil.png"
+                            alt="General Dentistry - Delhi Dental Care"
+                            fill
+                            className="object-contain object-center sm:object-top"
+                            priority
+                          />
+                        </picture>
+                      </section>
+      <section className="py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Button asChild variant="ghost" className="mb-4">
+          <Button asChild variant="ghost" className="mb-8 text-[#233870] hover:text-[#0085c4]">
             <Link href="/services">
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Services
             </Link>
           </Button>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Emergency Care
-              </h1>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Expert emergency-care treatments with advanced technology and experienced professionals.
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
+                Our Emergency Care Services
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
+                Comprehensive dental care tailored to your unique needs
               </p>
-              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
-                <Link href="/contact">Schedule Appointment</Link>
-              </Button>
             </div>
-            <div className="relative">
-              <img
-                src="https://images.pexels.com/photos/3845622/pexels-photo-3845622.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                alt="Emergency Care"
-                className="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
-              />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <Card>
+              <CardContent className="pt-6">
+                <img
+                  src="https://images.pexels.com/photos/5624170/pexels-photo-5624170.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Single Tooth Implant"
+                  className="rounded-lg mb-4 w-full h-48 object-cover"
+                />
+                <h3 className="text-xl font-bold mb-4">Toothache Relief</h3>
+                <p className="text-gray-600 mb-4">
+                  Fast relief for sudden dental pain.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600">Quick diagnosis and treatment</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600">Reduces pain immediately</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600">Prevents worsening conditions</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="pt-6">
+                <img
+                  src="https://res.cloudinary.com/dajphu5rf/image/upload/v1762169216/istockphoto-1204178238-612x612_qy0umb.jpg"
+                  alt="Multiple Implants"
+                  className="rounded-lg mb-4 w-full h-48 object-cover"
+                />
+                <h3 className="text-xl font-bold mb-4">Broken or Chipped Teeth</h3>
+                <p className="text-gray-600 mb-4">
+                  Repair damaged teeth promptly and safely.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600">Restores function and appearance</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600">Minimizes risk of infection</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600">Uses durable, natural-looking materials</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="pt-6">
+                <img
+                  src="https://images.pexels.com/photos/3785842/pexels-photo-3785842.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="All-on-4"
+                  className="rounded-lg mb-4 w-full h-48 object-cover"
+                />
+                <h3 className="text-xl font-bold mb-4">Knocked-Out (Avulsed) Teeth</h3>
+                <p className="text-gray-600 mb-4">
+                  Emergency management to save lost teeth.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600">Immediate intervention improves success</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600">Proper cleaning and reimplantation</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600">Protects jaw and surrounding teeth</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="pt-6">
+                <img
+                  src="https://images.pexels.com/photos/6627606/pexels-photo-6627606.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Implant Dentures"
+                  className="rounded-lg mb-4 w-full h-48 object-cover"
+                />
+                <h3 className="text-xl font-bold mb-4">Soft Tissue Injuries</h3>
+                <p className="text-gray-600 mb-4">
+                  Treats gums, lips, and mouth injuries.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600">Stops bleeding and reduces pain</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600">Prevents infection or complications</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600">Promotes faster healing</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Emergency Care Process</h2>
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl font-bold text-blue-600">1</span>
+                </div>
+                <h3 className="font-bold mb-2">Immediate Assessment</h3>
+                <p className="text-sm text-gray-600">Evaluate pain, injury, or trauma</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl font-bold text-blue-600">2</span>
+                </div>
+                <h3 className="font-bold mb-2">Stabilization</h3>
+                <p className="text-sm text-gray-600">Stop bleeding and reduce pain</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl font-bold text-blue-600">3</span>
+                </div>
+                <h3 className="font-bold mb-2">Diagnosis & Treatment</h3>
+                <p className="text-sm text-gray-600">X-rays, repair, or reimplant teeth</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl font-bold text-blue-600">4</span>
+                </div>
+                <h3 className="font-bold mb-2">Follow-Up Care</h3>
+                <p className="text-sm text-gray-600">Instructions and next visit scheduling</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl font-bold text-blue-600">5</span>
+                </div>
+                  <h3 className="font-bold">Preventive Advice</h3>
+                  <p className="text-sm text-gray-600">Tips to avoid future emergencies</p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose max-w-none">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">About Our Emergency Care Services</h2>
+          <div className="prose max-w-none mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Choose Emergency Dental Care?</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              We provide comprehensive emergency-care treatments using the latest technology and techniques. Our experienced team ensures comfortable, effective care tailored to your specific needs.
+              Dental emergencies can happen at any time, and prompt treatment is critical to save teeth and prevent complications. Our emergency care team is ready to act quickly and effectively.
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              From severe pain to broken or knocked-out teeth, we provide immediate relief and expert management, minimizing damage and restoring oral health.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              Timely emergency care ensures better outcomes, faster healing, and peace of mind for you and your family.
             </p>
           </div>
+          <div className="bg-blue-50 rounded-2xl p-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Success Rate & Benefits</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+              <div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">98%</div>
+                <div className="text-gray-600">Success Rate</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">25+</div>
+                <div className="text-gray-600">Years Lifespan</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">100%</div>
+                <div className="text-gray-600">Natural Function</div>
+              </div>
+            </div>
+          </div>
+          </div>
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-br from-blue-600 to-blue-700 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Get Expert Care Today
-          </h2>
-          <p className="text-xl text-blue-100 mb-8">
-            Schedule your appointment for professional emergency-care treatment
-          </p>
-          <Button asChild size="lg" variant="secondary">
-            <Link href="/contact">Book Appointment</Link>
-          </Button>
-        </div>
-      </section>
+      <section className="relative py-20 md:py-24 bg-gradient-to-br from-[#0085c4] to-[#233870] overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(142,196,223,0.1),transparent_50%)]" />
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 text-balance">
+              Ready to Restore Your Smile?
+            </h2>
+            <p className="text-xl text-white/90 mb-10 text-pretty">
+              Maintain your oral health with regular dental care from experienced professionals
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Button asChild size="lg" className="bg-white text-[#233870] hover:bg-white/90 text-lg px-8 h-14">
+                <Link href="/contact">Book Your Appointment</Link>
+              </Button>
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="text-lg px-8 h-14 bg-transparent text-white border-white/30 hover:bg-white/10 hover:text-white"
+              >
+                <Link href="/services">View All Services</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+    </div>
     </div>
   );
 }
+
