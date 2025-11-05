@@ -23,7 +23,7 @@ export function FloatingActionButtons() {
         </span>
       </Button>
 
-      <Button
+      {/* <Button
         size="lg"
         className="rounded-full w-16 h-16 shadow-2xl bg-blue-600 hover:bg-blue-700 transition-all hover:scale-110 relative group"
         onClick={() => window.location.href = `tel:${phoneNumber}`}
@@ -33,7 +33,7 @@ export function FloatingActionButtons() {
         <span className="absolute right-20 bg-gray-900 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg">
           Call +91 92682 45412
         </span>
-      </Button>
+      </Button> */}
     </div>
   );
 }
