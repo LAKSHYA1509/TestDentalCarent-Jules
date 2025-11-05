@@ -122,9 +122,12 @@ export default function ContactPage() {
                         <a href="mailto:info@delhidentalcare.com" className="text-blue-600 hover:underline block">
                           info@delhidentalcare.com
                         </a>
-                        <a href="mailto:appointments@delhidentalcare.com" className="text-blue-600 hover:underline block">
+                        {/* <a href="mailto:appointments@delhidentalcare.com" className="text-blue-600 hover:underline block sm:hidden text-sm">
                           appointments@delhidentalcare.com
                         </a>
+                        <a href="mailto:appointments@delhidentalcare.com" className="text-blue-600 hover:underline block hidden sm:inline">
+                          appointments@delhidentalcare.com
+                        </a> */}
                       </div>
                     </div>
                   </CardContent>
