@@ -35,6 +35,7 @@ export function Header() {
   const pathname = usePathname();
 
   useEffect(() => {
+    setMobileMenuOpen(false);
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };

@@ -108,15 +108,51 @@ export function Footer() {
           <div>
             <h3 className="text-white text-lg font-bold mb-4">Our Services</h3>
             <ul className="space-y-2 text-sm">
-              <li>General Dentistry</li>
-              <li>Cosmetic Dentistry</li>
-              <li>Orthodontics</li>
-              <li>Root Canal Treatment</li>
-              <li>Dental Implants</li>
-              <li>Teeth Whitening</li>
-              <li>Dentures && Bridges</li>
-              <li>Pediatric Dentistry</li>
-              <li>Emergency Dental Care</li>
+              <li>
+                <Link href="/services/general-dentistry" className="hover:text-white transition-colors">
+                  General Dentistry
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/cosmetic-dentistry" className="hover:text-white transition-colors">
+                  Cosmetic Dentistry
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/orthodontics" className="hover:text-white transition-colors">
+                  Orthodontics
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/dental-implants" className="hover:text-white transition-colors">
+                  Dental Implants
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/root-canal" className="hover:text-white transition-colors">
+                  Root Canal Treatment
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/teeth-whitening" className="hover:text-white transition-colors">
+                  Teeth Whitening
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/dentures-bridges" className="hover:text-white transition-colors">
+                  Dentures & Bridges
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/pediatric-dentistry" className="hover:text-white transition-colors">
+                  Pediatric Dentistry
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/emergency-care" className="hover:text-white transition-colors">
+                  Emergency Dental Care
+                </Link>
+              </li>
             </ul>
           </div>
 

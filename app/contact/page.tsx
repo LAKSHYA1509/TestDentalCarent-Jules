@@ -122,9 +122,12 @@ export default function ContactPage() {
                         <a href="mailto:info@delhidentalcare.com" className="text-blue-600 hover:underline block">
                           info@delhidentalcare.com
                         </a>
-                        <a href="mailto:appointments@delhidentalcare.com" className="text-blue-600 hover:underline block">
+                        {/* <a href="mailto:appointments@delhidentalcare.com" className="text-blue-600 hover:underline block sm:hidden text-sm">
                           appointments@delhidentalcare.com
                         </a>
+                        <a href="mailto:appointments@delhidentalcare.com" className="text-blue-600 hover:underline block hidden sm:inline">
+                          appointments@delhidentalcare.com
+                        </a> */}
                       </div>
                     </div>
                   </CardContent>
@@ -185,7 +188,7 @@ export default function ContactPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Find Us on Map</h2>
           <div className="aspect-video rounded-2xl overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9746847041707!2d77.21787731508108!3d28.631006282422656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b0e4b501%3A0x7b4d3b8f1f9c3e4!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5887.665014730484!2d77.13361809478172!3d28.66491132455902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03a86a8b7561%3A0x79f31fb9d73b3bb0!2sNishkam%20Bhawan!5e0!3m2!1sen!2sin!4v1762340414927!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
