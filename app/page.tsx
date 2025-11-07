@@ -52,15 +52,6 @@ export default function Home() {
                 className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
                 priority
               />
-              <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-sm rounded-lg p-4">
-                <p className="text-sm font-semibold text-gray-900">Trusted by 10,000+ patients</p>
-                <div className="flex items-center gap-1 mt-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                  ))}
-                  <span className="text-sm text-gray-600 ml-2">5.0 Rating</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
