@@ -29,7 +29,7 @@ export default function ContactPage() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Contact Us
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-green-600 max-w-3xl mx-auto">
               We're here to help! Reach out to us for appointments, enquiries, or any questions about our services.
             </p>
           </div>
