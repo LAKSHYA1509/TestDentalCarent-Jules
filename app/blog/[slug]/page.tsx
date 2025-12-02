@@ -15,6 +15,7 @@ interface BlogPost {
   featured_image: string | null;
   author: string;
   created_at: string;
+  descriptive: string;
 }
 
 export default function BlogPostPage() {
